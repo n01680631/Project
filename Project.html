@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web page</title>
+<link rel = "stylesheet" href="project.css">
+<script src="projectfun.js"></script>
+
+<body>
+    <header>
+        <h1>Feedback Questionarre</h1>
+        <nav>
+<ul>
+    <li class="navbar-links"> <a href="givenfeedback.html">Given feedback</a></li>
+
+</ul>
+        </nav>
+    </header>
+    <main>
+        <section class = "form-container">
+            <h3>Enter your information below:</h3>
+            <form id = "Information" onsubmit="return validationForm();">
+            <label for = "name">Name:</label>
+            <input type = "text" id="name" name="name">
+            <br>
+            <label for = "email">Email:</label>
+            <input type = "text" id="email" name="email">
+            <br>
+            <label for = "message">Message:</label>
+            <textarea id= "message"  name="message" rows="3"></textarea>
+            <br>
+            <button type="submit">Submit</button>
+        
+            <div id="formError" class="error"></div>                                                                                                                                                                                                                                                
+
+        </form>
+ 
+        </section>
+        
+        
+    <footer>
+<p>&copy; Feedback Questionarre</p>
+</footer>
+        </section>
+    </main>
+</body>
